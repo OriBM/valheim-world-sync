@@ -1,0 +1,5 @@
+/target/
+# Never commit world saves, sandboxes or anything with tokens.
+/sandbox/
+*.zip
+.env

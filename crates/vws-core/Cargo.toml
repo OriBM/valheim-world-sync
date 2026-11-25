@@ -1,0 +1,19 @@
+[package]
+name = "vws-core"
+description = "Valheim World Sync core: GitHub state, saves, world files, journal"
+version.workspace = true
+edition.workspace = true
+publish.workspace = true
+
+[dependencies]
+base64 = "0.23.1"
+serde = { version = "1.0.229", features = ["derive"] }
+serde_json = "1.0.154"
+sha2 = "0.11.1"
+thiserror = "2.0.21"
+ureq = "3.5.2"
+uuid = { version = "1.29.3", features = ["v4"] }
+zip = { version = "9.8.2", default-features = false, features = ["deflate-flate2-zlib-rs"] }
+
+[dev-dependencies]
+tempfile = "3.27.0"

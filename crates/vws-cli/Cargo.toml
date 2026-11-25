@@ -1,0 +1,13 @@
+[package]
+name = "vws-cli"
+description = "Developer harness for vws-core"
+version.workspace = true
+edition.workspace = true
+publish.workspace = true
+
+[[bin]]
+name = "vws"
+path = "src/main.rs"
+
+[dependencies]
+vws-core = { path = "../vws-core" }
